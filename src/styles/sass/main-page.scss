@@ -1,0 +1,221 @@
+.main-page-container{
+    background: $mogoGradient,
+    url('../../assets/images/banner.png') center / cover no-repeat;
+}
+
+.main-page-content{
+    @include container;
+    display: flex;
+    flex-flow: column wrap;
+    color: white;
+
+    &__h2{
+        width: 100%;
+        height: 80px;
+        margin: 0;
+        padding-top: 177px;
+
+        text-transform: capitalize;
+        font-family: 'Kaushan Script', sans-serif;
+        font-size: 64px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__h1{
+        width: 100%;
+        height: 370px;
+        margin: 0;
+
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 144px;
+        font-weight: 700;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__separator{
+        width: 100%;
+        max-width: 170px;
+        margin: 44px auto 0;
+
+        background-color: white;
+        height: 4px;
+        border: none;
+    }
+
+    &__button{
+        width: 370px;
+        height: 80px;
+        text-transform: uppercase;
+        margin: 72px auto 0;
+    
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    
+        padding: 0;
+        border: 4px solid white;
+        background-color: rgba(0, 0, 0, 0);
+        transition: all .5s ease-in-out;
+
+        &:hover{
+            color: rgba(228, 190, 141, 1);
+            background-color: white;
+        }
+
+        &:active{
+            border: 4px solid rgba(228, 190, 141, 1);
+        }
+    }
+}
+
+.main-page-slider{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 112px;
+}
+
+.main-slider-item{
+    cursor: pointer;
+
+    &__checked{
+        display: none;
+    }
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &__text{
+        height: 81px;
+        margin: 0;
+        text-transform: uppercase;
+        color: rgba(249, 239, 207, 1);
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+
+        box-sizing: border-box;
+        padding: 23px 0;
+
+        transition: .7s;
+    }
+
+    &__number-part{
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(249, 239, 207, 1);
+
+        transition: .7s;
+    }
+}
+
+.slider-hr-full{
+    width: 100%;
+    max-width: 270px;
+    height: 4px;
+    background-color: rgba(249, 239, 207, 1);
+    border: none;
+
+    transition: all .7s ease;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.slider-hr-part{
+    height: 4px;
+    margin: 0;
+    background-color: rgba(243, 130, 129, 1);
+    border: none;
+    opacity: 0;
+
+    transition: .7s;
+}
+
+.main-slider-item__part{
+    &2{
+        grid-column: 2/3;
+    }
+
+    &3{
+        grid-column: 3/4;
+    }
+
+    &4{
+        grid-column: 4/5;
+    }
+}
+
+#intro:checked ~ .main-slider-item .main-slider-item__full1{
+    background-color: white;
+}
+
+#intro:checked ~ .main-slider-item .main-slider-item__part1{
+    opacity: 1;
+}
+
+#intro:checked ~ .main-slider-item .slider-text1{
+    color: rgba(255, 255, 255, 1);
+}
+
+#intro:checked ~ .main-slider-item .slider-number-part1{
+    color: rgba(255, 255, 255, 1);
+}
+
+#work:checked ~ .main-slider-item .main-slider-item__full2{
+    background-color: white;
+}
+
+#work:checked ~ .main-slider-item .main-slider-item__part2{
+    opacity: 1;
+}
+
+#work:checked ~ .main-slider-item .slider-text2{
+    color: rgba(255, 255, 255, 1);
+}
+
+#work:checked ~ .main-slider-item .slider-number-part2{
+    color: rgba(255, 255, 255, 1);
+}
+
+#about:checked ~ .main-slider-item .main-slider-item__full3{
+    background-color: white;
+}
+
+#about:checked ~ .main-slider-item .main-slider-item__part3{
+    opacity: 1;
+}
+
+#about:checked ~ .main-slider-item .slider-text3{
+    color: rgba(255, 255, 255, 1);
+}
+
+#about:checked ~ .main-slider-item .slider-number-part3{
+    color: rgba(255, 255, 255, 1);
+}
+
+#contacts:checked ~ .main-slider-item .main-slider-item__full4{
+    background-color: white;
+}
+
+#contacts:checked ~ .main-slider-item .main-slider-item__part4{
+    opacity: 1;
+}
+
+#contacts:checked ~ .main-slider-item .slider-text4{
+    color: rgba(255, 255, 255, 1);
+}
+
+#contacts:checked ~ .main-slider-item .slider-number-part4{
+    color: rgba(255, 255, 255, 1);
+}

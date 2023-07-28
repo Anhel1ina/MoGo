@@ -1,0 +1,58 @@
+.services-content{
+    @include container;
+    font-family: 'Raleway', sans-serif;
+    padding: 42px 0 91px;
+
+    &__h2{
+        @include h2Pattern;
+    }
+
+    &__h1{
+        @include h1Pattern;
+    }
+
+    &__separator{
+        @include h-separator;
+    }
+}
+
+.servicese-blocks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 140px;
+    margin-top: 80px;
+
+    &__item{
+        display: grid;
+        grid-template-columns: 70px auto;
+    }
+}
+
+.services-item{
+    height: 139px;
+
+    &__h4{
+        height: 51px;
+        margin: 9px 0 0 30px;
+        display: flex;
+        align-items: center;
+
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__text{
+        grid-column: 2/3;
+        height: 80px;
+        margin: 0 0 0 30px;
+
+        display: flex;
+        align-items: center;
+
+        color: rgba(45, 48, 51, 1);
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,38 @@
+.futures-container{
+    background-color: rgba(149, 225, 211, 1);
+    font-family: 'Raleway', sans-serif;
+    color: white
+}
+
+.futures-content{
+    @include container;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    &__item{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.futures-block{
+    border-left: 1px solid white;
+    
+    &:last-child{
+        border-right: 1px solid white;
+    }
+
+    &__num-part{
+        font-size: 64px;
+        font-weight: 700;
+        margin: 64px 0 20px;
+    }
+
+    &__text{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0 0 61px;
+    }
+}
