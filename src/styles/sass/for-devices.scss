@@ -7,6 +7,7 @@
 
 .for-devices-content{
     @include container;
+    padding-top: 42px;
 
     &__h2{
         @include h2Pattern;

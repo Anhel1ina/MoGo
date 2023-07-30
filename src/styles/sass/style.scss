@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
@@ -63,3 +67,13 @@ $hoverColor: rgba(244, 191, 135, 1);
 @import './futures.scss';
 @import './amazing-services.scss';
 @import './for-devices.scss';
+@import './service.scss';
+@import './swiper-reviews.scss';
+@import './team.scss';
+@import './partners.scss';
+@import './work.scss';
+@import './clients.scss';
+@import './blog.scss';
+
+@import '/node_modules/swiper/swiper.scss';
+@import '/node_modules/swiper/modules/navigation.scss';

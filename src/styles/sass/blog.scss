@@ -1,0 +1,139 @@
+.blog-content{
+    @include container;
+    font-family: 'Raleway', sans-serif;
+    padding: 84px 0;
+
+    &__h2{
+        @include h2Pattern;
+    }
+
+    &__h1{
+        @include h1Pattern;
+    }
+
+    &__separator{
+        @include h-separator;
+    }
+
+    &__posts{
+        margin-top: 42px;
+
+        display: flex;
+        grid-template-columns: repeat(3, 33%);
+        column-gap: 30px;
+    }
+}
+
+.blog-posts__link{
+    text-decoration: none;
+}
+
+.blog-post{
+    width: 100%;
+
+    &__images{
+        width: 100%;
+    }
+}
+
+.post-images{
+    position: relative;
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.post-date{
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: rgba(149, 225, 211, 1);
+    color: white;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 25px;
+    left: -14px;
+
+    &__num{
+        text-decoration: none;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__mo{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+}
+
+.post-text{
+    width: 100%;
+    margin-top: 30px;
+    color: rgba(45, 48, 51, 1);
+
+    &__title{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    &__plot{
+        margin: 12px 0 0;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+.post-icons{
+    margin-top: 22px;
+    display: flex;
+    color: rgba(45, 48, 51, 1);
+
+    &__pair{
+        display: flex;
+
+        &:not(:last-child){
+            margin-right: 43px;
+        }
+    }
+}
+
+.pair-icon__img{
+    margin-right: 16px;
+}
+
+.map-container{
+    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),
+    url(../../assets/images/map-image.png) center / cover no-repeat;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(243, 130, 129, 1);
+}
+
+.map-content{
+    padding: 42px 0;
+
+    &__icon{
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__h1{
+        @include h1Pattern;
+    }
+
+    &__separator{
+        @include h-separator;
+    }
+}

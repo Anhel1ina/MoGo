@@ -7,7 +7,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="./js/accordion.js" type="module"></script>
+    <script src="./js/swiper.js" type="module"></script>
     <title>MoGo</title>
 </head>
 <body>
@@ -15,11 +17,11 @@
         <div class="container-header__inner-content header-content">
             <img src="./assets/images/logo.svg" alt="main-logo" class="header-content-logos">
             <nav class="header-content__nav header-nav">
-                <a href="#" class="header-nav__item header-item-text"><p class="header-nav__text">about</p></a>
-                <a href="#" class="header-nav__item header-item-text"><p class="header-nav__text">service</p></a>
-                <a href="#" class="header-nav__item header-item-text"><p class="header-nav__text">work</p></a>
-                <a href="#" class="header-nav__item header-item-text"><p class="header-nav__text">blog</p></a>
-                <a href="#" class="header-nav__item header-item-text"><p class="header-nav__text">contact</p></a>
+                <a href="#about-link" class="header-nav__item header-item-text"><p class="header-nav__text">about</p></a>
+                <a href="#service-link" class="header-nav__item header-item-text"><p class="header-nav__text">service</p></a>
+                <a href="#work-link" class="header-nav__item header-item-text"><p class="header-nav__text">work</p></a>
+                <a href="#blog-link" class="header-nav__item header-item-text"><p class="header-nav__text">blog</p></a>
+                <a href="#contact-link" class="header-nav__item header-item-text"><p class="header-nav__text">contact</p></a>
 
                 <a href="#" class="header-nav__item header-item-img"><img src="./assets/images/nav_shop-cart.svg" alt="shopping-cart-icon" class="header-nav__icon"></a>
                 <a href="#" class="header-nav__item header-item-img"><img src="./assets/images/nav_search.svg" alt="search-icon" class="header-nav__icon"></a>
@@ -65,7 +67,7 @@
             </div>
         </div>
     </div>
-    <div class="about-container">
+    <div class="about-container" id="about-link">
         <div class="about-container__inner-content about-content">
             <h2 class="about-content__h2">What we do</h2>
             <h1 class="about-content__h1">story about us</h1>
@@ -116,8 +118,8 @@
     </div>
     <div class="amazing-services-container">
         <div class="amazing-services-container__inner-content services-content">
-            <h2 class="services-content__h2">What we do</h2>
-            <h1 class="services-content__h1">story about us</h1>
+            <h2 class="services-content__h2">We work with</h2>
+            <h1 class="services-content__h1">amazing services</h1>
             <hr class="services-content__separator">
             <div class="services-content__blocks servicese-blocks">
                 <div class="servicese-blocks__item services-item">
@@ -155,14 +157,433 @@
     </div>
     <div class="for-devices-container">
         <div class="for-devices-container-inner-content for-devices-content">
-            <h2 class="for-devices-content__h2">What we do</h2>
-            <h1 class="for-devices-content__h1">story about us</h1>
+            <h2 class="for-devices-content__h2">For all devices</h2>
+            <h1 class="for-devices-content__h1">unique design</h1>
             <hr class="for-devices-content__separator">
             <div class="for-devices-content__mocups mocups-content">
                 <img class="mocups-content__mocup" src="./assets/images/mocup.png" alt="tablet-look-mocup">
                 <img class="mocups-content__site-sheet" src="./assets/images/site-sheet.png" alt="tablet-look-mocup">
                 <img class="mocups-content__ph-mocup" src="./assets/images/phone-mocup.png" alt="phone-look-mocup">
             </div>
+        </div>
+    </div>
+    <div class="service-acc-container" id="service-link">
+        <div class="service-acc-container__inner-content service-acc-content">
+            <h2 class="service-acc-content__h2">Service</h2>
+            <h1 class="service-acc-content__h1">what we do</h1>
+            <hr class="service-acc-content__separator">
+            <p class="service-acc-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consectetur eius dolorem ipsum voluptates quaerat molestiae officia nulla repellat doloribus, labore, dolorum assumenda maxime. Vitae dicta sit, provident quidem voluptates officiis possimus.</p>
+            <div class="service-acc-content__inf-block service-acc-inf-block">
+                <img class="service-acc-inf-block__img" src="./assets/images/service-acc-inf-block.png" alt="service-block-image">
+                <div class="service-acc-inf-block__accordion accordion">
+                    <div class="accordion__item acc-group">
+                        <button class="acc-group__button acc-button">
+                            <img class="acc-button__icon" src="./assets/images/accordion-icon1.svg" alt="accordion-icon">
+                            <p class="acc-button__title">photography</p>
+                        </button>
+                        <div class="acc-group__text-block acc-text-block">
+                            <p class="acc-text-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio? Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item acc-group">
+                        <button class="acc-group__button acc-button">
+                            <img class="acc-button__icon" src="./assets/images/accordion-icon2.svg" alt="accordion-icon">
+                            <p class="acc-button__title">creativity</p>
+                        </button>
+                        <div class="acc-group__text-block acc-text-block">
+                            <p class="acc-text-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio? Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item acc-group">
+                        <button class="acc-group__button acc-button">
+                            <img class="acc-button__icon" src="./assets/images/accordion-icon3.svg" alt="accordion-icon">
+                            <p class="acc-button__title">web design</p>
+                        </button>
+                        <div class="acc-group__text-block acc-text-block">
+                            <p class="acc-text-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio? Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container swiper">
+        <div class="swiper__inner-content swiper-content swiper-wrapper">
+            <div class="swiper-content__slide swiper-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/review-icon.svg" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">Jon Doe</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/review-icon.svg" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">Jon Doe</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/review-icon.svg" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">Jon Doe</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/review-icon.svg" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">Jon Doe</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/review-icon.svg" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">Jon Doe</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="swiper__prev-button swiper-button-prev"></div>
+        <div class="swiper__next-button swiper-button-next"></div>
+    </div>
+    <div class="team-container">
+        <div class="team-container__inner-content team-content">
+            <h2 class="team-content__h2">Who we are</h2>
+            <h1 class="team-content__h1">meet our team</h1>
+            <hr class="team-content__separator">
+            <p class="team-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consectetur eius dolorem ipsum voluptates quaerat molestiae officia nulla repellat doloribus, labore, dolorum assumenda maxime. Vitae dicta sit, provident quidem voluptates officiis possimus.</p>
+            <div class="team-content__img-block team-img-block">
+                <div class="team-img-block__item team-block-item">
+                    <div class="team-block-item__images team-block-images">
+                        <img class="team-block-images__photo" src="./assets/images/team-member1.png" alt="team-member">
+                        <div class="team-block-images__icons team-icons">
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-facebook.svg" alt="facebook-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-twitter.svg" alt="twitter-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-pinterest.svg" alt="pinterest-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-instagram.svg" alt="instagram-link"></a>
+                        </div>
+                    </div>
+                    <div class="team-block-item__text team-item-text">
+                        <p class="team-item-text__name">kadin dias</p>
+                        <p class="team-item-text__occup">founder, ceo</p>
+                    </div>
+                </div>
+                <div class="team-img-block__item team-block-item">
+                    <div class="team-block-item__images team-block-images">
+                        <img class="team-block-images__photo" src="./assets/images/team-member2.png" alt="team-member">
+                        <div class="team-block-images__icons team-icons">
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-facebook.svg" alt="facebook-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-twitter.svg" alt="twitter-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-pinterest.svg" alt="pinterest-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-instagram.svg" alt="instagram-link"></a>
+                        </div>
+                    </div>
+                    <div class="team-block-item__text team-item-text">
+                        <p class="team-item-text__name">zain calzoni</p>
+                        <p class="team-item-text__occup">designer</p>
+                    </div>
+                </div>
+                <div class="team-img-block__item team-block-item">
+                    <div class="team-block-item__images team-block-images">
+                        <img class="team-block-images__photo" src="./assets/images/team-member3.png" alt="team-member">
+                        <div class="team-block-images__icons team-icons">
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-facebook.svg" alt="facebook-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-twitter.svg" alt="twitter-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-pinterest.svg" alt="pinterest-link"></a>
+                            <a class="team-icons__item" href="#"><img src="./assets/images/team-instagram.svg" alt="instagram-link"></a>
+                        </div>
+                    </div>
+                    <div class="team-block-item__text team-item-text">
+                        <p class="team-item-text__name">charlie george</p>
+                        <p class="team-item-text__occup">photographer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="partners-container">
+        <div class="partners-container__inner-content partners-content">
+            <img class="partners-content__item" src="./assets/images/partners-icon1.svg" alt="partners-icon">
+            <img class="partners-content__item" src="./assets/images/partners-icon2.svg" alt="partners-icon">
+            <img class="partners-content__item" src="./assets/images/partners-icon3.svg" alt="partners-icon">
+            <img class="partners-content__item" src="./assets/images/partners-icon4.svg" alt="partners-icon">
+            <img class="partners-content__item" src="./assets/images/partners-icon5.svg" alt="partners-icon">
+            <img class="partners-content__item" src="./assets/images/partners-icon6.svg" alt="partners-icon">
+        </div>
+    </div>
+    <div class="work-container" id="work-link">
+        <div class="work-container__inner-content work-content">
+            <h2 class="work-content__h2">What we do</h2>
+            <h1 class="work-content__h1">some of our work</h1>
+            <hr class="work-content__separator">
+            <p class="work-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consectetur eius dolorem ipsum voluptates quaerat molestiae officia nulla repellat doloribus, labore, dolorum assumenda maxime. Vitae dicta sit, provident quidem voluptates officiis possimus.</p>
+        </div>
+        <div class="work-container__images work-images">
+            <a class="work-images__link work-block1" href="#"><div class="work-images__item work-item">
+                <img class="work-item__img" src="./assets/images/work1.png" alt="work1">
+                <img class="work-item__icon" src="./assets/images/work-icon.svg" alt="work-icon">
+                <h6 class="work-item__h6">creative design</h6>
+                <p class="work-item__text">Lorem ipsum dolor sit</p>
+            </div></a>
+            <a class="work-images__link work-block2" href="#"><div class="work-images__item work-item">
+                <img class="work-item__img" src="./assets/images/work2.png" alt="work2">
+                <img class="work-item__icon" src="./assets/images/work-icon.svg" alt="work-icon">
+                <h6 class="work-item__h6">creative design</h6>
+                <p class="work-item__text">Lorem ipsum dolor sit</p>
+            </div></a>
+            <a class="work-images__link work-block3" href="#"><div class="work-images__item work-item">
+                <img class="work-item__img" src="./assets/images/work3.png" alt="work3">
+                <img class="work-item__icon" src="./assets/images/work-icon.svg" alt="work-icon">
+                <h6 class="work-item__h6">creative design</h6>
+                <p class="work-item__text">Lorem ipsum dolor sit</p>
+            </div></a>
+            <a class="work-images__link work-block4" href="#"><div class="work-images__item work-item">
+                <img class="work-item__img" src="./assets/images/work4.png" alt="work4">
+                <img class="work-item__icon" src="./assets/images/work-icon.svg" alt="work-icon">
+                <h6 class="work-item__h6">creative design</h6>
+                <p class="work-item__text">Lorem ipsum dolor sit</p>
+            </div></a>
+            <a class="work-images__link work-block5" href="#"><div class="work-images__item work-item">
+                <img class="work-item__img" src="./assets/images/work5.png" alt="work5">
+                <img class="work-item__icon" src="./assets/images/work-icon.svg" alt="work-icon">
+                <h6 class="work-item__h6">creative design</h6>
+                <p class="work-item__text">Lorem ipsum dolor sit</p>
+            </div></a>
+            <a class="work-images__link work-block6" href="#"><div class="work-images__item work-item">
+                <img class="work-item__img" src="./assets/images/work6.png" alt="work6">
+                <img class="work-item__icon" src="./assets/images/work-icon.svg" alt="work-icon">
+                <h6 class="work-item__h6">creative design</h6>
+                <p class="work-item__text">Lorem ipsum dolor sit</p>
+            </div></a>
+            <a class="work-images__link work-block7" href="#"><div class="work-images__item work-item">
+                <img class="work-item__img" src="./assets/images/work7.png" alt="work7">
+                <img class="work-item__icon" src="./assets/images/work-icon.svg" alt="work-icon">
+                <h6 class="work-item__h6">creative design</h6>
+                <p class="work-item__text">Lorem ipsum dolor sit</p>
+            </div></a>
+        </div>
+    </div>
+    <div class="swiper-container swiper">
+        <div class="swiper__inner-content swiper-content swiper-wrapper">
+            <div class="swiper-content__slide swiper-slide swiper2-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/swiper2-image.png" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">James Philips</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide swiper2-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/swiper2-image.png" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">James Philips</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide swiper2-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/swiper2-image.png" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">James Philips</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide swiper2-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/swiper2-image.png" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">James Philips</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="swiper-content__slide swiper-slide swiper2-slide">
+                <div class="swiper-slide__content slide-content">
+                    <div class="swiper-slide-content__img">
+                        <img src="./assets/images/swiper2-image.png" alt="review-icon">
+                    </div>
+                    <div class="slide-content__text slide-text">
+                        <p class="slide-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sit dolores laborum eum, quidem quod sunt animi quisquam, porro corrupti modi ullam voluptatem debitis laudantium iusto asperiores cumque?</p>
+                        <hr class="slide-text__separator">
+                        <p class="slide-text__customer">James Philips</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="swiper__prev-button swiper-button-prev"></div>
+        <div class="swiper__next-button swiper-button-next"></div>
+    </div>
+    <div class="clients-container">
+        <div class="clients-container__inner-content clients-content">
+            <h2 class="clients-content__h2">Happy clients</h2>
+            <h1 class="clients-content__h1">what people say</h1>
+            <hr class="clients-content__separator">
+            <div class="clients-content__block clients-block">
+                <div class="clients-block__item client-block-item">
+                    <img class="client-block-item__img" src="./assets/images/client1.png" alt="client-icon">
+                    <div class="client-block-item__content client-item-content">
+                        <p class="client-item-content__name">phillip culhane</p>
+                        <p class="client-item-content__occup">photographer</p>
+                        <hr class="client-item-content__separator">
+                        <p class="client-item-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos sint temporibus maxime consequatur dignissimos officiis expedita mollitia blanditiis eveniet sequi libero suscipit, rem iusto? Numquam, ipsa nemo?</p>
+                    </div>
+                </div>
+                <div class="clients-block__item client-block-item">
+                    <img class="client-block-item__img" src="./assets/images/client2.png" alt="client-icon1">
+                    <div class="client-block-item__content client-item-content">
+                        <p class="client-item-content__name">paityn press</p>
+                        <p class="client-item-content__occup">photographer</p>
+                        <hr class="client-item-content__separator">
+                        <p class="client-item-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos sint temporibus maxime consequatur dignissimos officiis expedita mollitia blanditiis eveniet sequi libero suscipit, rem iusto? Numquam, ipsa nemo?</p>
+                    </div>
+                </div>
+                <div class="clients-block__item client-block-item">
+                    <img class="client-block-item__img" src="./assets/images/client3.png" alt="client-icon">
+                    <div class="client-block-item__content client-item-content">
+                        <p class="client-item-content__name">dulce gouse</p>
+                        <p class="client-item-content__occup">photographer</p>
+                        <hr class="client-item-content__separator">
+                        <p class="client-item-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos sint temporibus maxime consequatur dignissimos officiis expedita mollitia blanditiis eveniet sequi libero suscipit, rem iusto? Numquam, ipsa nemo?</p>
+                    </div>
+                </div>
+                <div class="clients-block__item client-block-item">
+                    <img class="client-block-item__img" src="./assets/images/client4.png" alt="client-icon">
+                    <div class="client-block-item__content client-item-content">
+                        <p class="client-item-content__name">zaire schleifer</p>
+                        <p class="client-item-content__occup">photographer</p>
+                        <hr class="client-item-content__separator">
+                        <p class="client-item-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eos sint temporibus maxime consequatur dignissimos officiis expedita mollitia blanditiis eveniet sequi libero suscipit, rem iusto? Numquam, ipsa nemo?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-container" id="blog-link">
+        <div class="blog-container__inner-content blog-content">
+            <h2 class="blog-content__h2">Our stories</h2>
+            <h1 class="blog-content__h1">latest blog</h1>
+            <hr class="blog-content__separator">
+            <div class="blog-content__posts blog-posts">
+                <a class="blog-posts__link" href="#"><div class="blog-posts__item blog-post">
+                    <div class="blog-post__images post-images">
+                        <img class="post-images__img" src="./assets/images/blog-post.png" alt="post-image">
+                        <div class="post-images__date post-date">
+                            <p class="post-date__num">15</p>
+                            <p class="post-date__mo">jan</p>
+                        </div>
+                    </div>
+                    <div class="blog-post__text post-text">
+                        <p class="post-text__title">Lorem ipsum dolor sit amet</p>
+                        <p class="post-text__plot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ab eligendi doloribus, magni accusantium minima nostrum obcaecati quo unde voluptatem aliquam sed nam explicabo eos numquam. Dicta, at.</p>
+                    </div>
+                    <div class="blog-post__icons post-icons">
+                        <div class="post-icons__pair pair-icon">
+                            <img class="pair-icon__img" src="./assets/images/blog-jew-icon.svg" alt="jew-icon">
+                            <p class="pair-icon__num">542</p>
+                        </div>
+                        <div class="post-icons__pair pair-icon">
+                            <img class="pair-icon__img" src="./assets/images/blog-comment-icon.svg" alt="jew-icon">
+                            <p class="pair-icon__num">17</p>
+                        </div>
+                    </div>
+                </div></a>
+                <a class="blog-posts__link" href="#"><div class="blog-posts__item blog-post">
+                    <div class="blog-post__images post-images">
+                        <img class="post-images__img" src="./assets/images/blog-post.png" alt="post-image">
+                        <div class="post-images__date post-date">
+                            <p class="post-date__num">15</p>
+                            <p class="post-date__mo">jan</p>
+                        </div>
+                    </div>
+                    <div class="blog-post__text post-text">
+                        <p class="post-text__title">Lorem ipsum dolor sit amet</p>
+                        <p class="post-text__plot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ab eligendi doloribus, magni accusantium minima nostrum obcaecati quo unde voluptatem aliquam sed nam explicabo eos numquam. Dicta, at.</p>
+                    </div>
+                    <div class="blog-post__icons post-icons">
+                        <div class="post-icons__pair pair-icon">
+                            <img class="pair-icon__img" src="./assets/images/blog-jew-icon.svg" alt="jew-icon">
+                            <p class="pair-icon__num">542</p>
+                        </div>
+                        <div class="post-icons__pair pair-icon">
+                            <img class="pair-icon__img" src="./assets/images/blog-comment-icon.svg" alt="jew-icon">
+                            <p class="pair-icon__num">17</p>
+                        </div>
+                    </div>
+                </div></a>
+                <a class="blog-posts__link" href="#"><div class="blog-posts__item blog-post">
+                    <div class="blog-post__images post-images">
+                        <img class="post-images__img" src="./assets/images/blog-post.png" alt="post-image">
+                        <div class="post-images__date post-date">
+                            <p class="post-date__num">15</p>
+                            <p class="post-date__mo">jan</p>
+                        </div>
+                    </div>
+                    <div class="blog-post__text post-text">
+                        <p class="post-text__title">Lorem ipsum dolor sit amet</p>
+                        <p class="post-text__plot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ab eligendi doloribus, magni accusantium minima nostrum obcaecati quo unde voluptatem aliquam sed nam explicabo eos numquam. Dicta, at.</p>
+                    </div>
+                    <div class="blog-post__icons post-icons">
+                        <div class="post-icons__pair pair-icon">
+                            <img class="pair-icon__img" src="./assets/images/blog-jew-icon.svg" alt="jew-icon">
+                            <p class="pair-icon__num">542</p>
+                        </div>
+                        <div class="post-icons__pair pair-icon">
+                            <img class="pair-icon__img" src="./assets/images/blog-comment-icon.svg" alt="jew-icon">
+                            <p class="pair-icon__num">17</p>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div class="map-container__inner-content map-content">
+            <img class="map-content__icon" src="./assets/images/map-icon.svg" alt="map-icon">
+            <h1 class="map-content__h1">latest blog</h1>
+            <hr class="map-content__separator">
         </div>
     </div>
 </body>
