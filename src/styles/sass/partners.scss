@@ -5,10 +5,29 @@
 .partners-content{
     @include container;
     padding: 42px 0;
-
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    justify-content: space-between;
+
+    &__item{
+        justify-self: center;
+    }
 }
 
+
+@media(max-width: 1200px){
+    .partners-content{
+        @include container_max1200;
+        padding: 28px 0;
+
+        &__item{
+            display: grid;
+            & > img{
+                width: 68%;
+                aspect-ratio: 1/1;
+                justify-self: center;
+            }
+        }
+    }
+}
 

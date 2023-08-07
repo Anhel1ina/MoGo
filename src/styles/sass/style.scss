@@ -1,9 +1,17 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import '/node_modules/swiper/swiper.scss';
+@import '/node_modules/swiper/modules/navigation.scss';
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
+}
+
+p{
+    margin-bottom: 0;
 }
 
 $mogoGradient: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
@@ -13,6 +21,18 @@ $footerColor: rgba(198, 203, 205, 1);
 @mixin container{
     width: 100%;
     max-width: 1170px;
+    margin: 0 auto;
+}
+
+@mixin container_max1200{
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+@mixin container_max1000{
+    width: 100%;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -49,6 +69,7 @@ $footerColor: rgba(198, 203, 205, 1);
     background-color: rgba(243, 130, 129, 1);
     border: none;
     margin: 24px auto 0;
+    opacity: 1;
 }
 
 @mixin h-text{
@@ -77,5 +98,3 @@ $footerColor: rgba(198, 203, 205, 1);
 @import './blog.scss';
 @import './footer.scss';
 
-@import '/node_modules/swiper/swiper.scss';
-@import '/node_modules/swiper/modules/navigation.scss';

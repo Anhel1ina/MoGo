@@ -102,3 +102,56 @@
         align-items: center;
     }
 }
+@media (max-width: 1200px){
+    .team-content{
+        @include container_max1200;
+        padding: 58px 0;
+
+        &__h2,
+        &__h1{
+            font-size: 24px;
+            height: 67px;
+        }
+    
+        &__separator{
+            width: 148px;
+        }
+    
+        &__text{
+            font-size: 14px;
+        }
+    }
+
+    .team-img-block{
+        margin-top: 49px;
+        column-gap: 20px;
+    }
+
+    .team-block-images{
+        &:hover::after{
+            top: -5px;
+            left: -3px;
+        }
+    }
+
+    .team-icons{
+        top: calc(50% - 5px);
+        left: calc(50% - 3px);
+
+        &__item{
+            display: inline-block;
+            width: 35px;
+        }
+    }
+
+    .team-item-text{
+        &__name{
+            font-size: 18px;
+            height: 49px;
+        }
+    
+        &__occup{
+            font-size: 14px;
+        }
+    }
+}

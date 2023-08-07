@@ -33,6 +33,30 @@
     &__text{
         font-size: 24px;
         font-weight: 500;
-        margin: 0 0 61px;
+        margin-bottom: 61px;
+    }
+}
+
+@media(max-width: 1200px){
+    .futures-content{
+        @include container_max1200;
+    }
+
+    .futures-block{
+        &__num-part{
+            font-size: 48px;
+            margin: 30px 0 0;
+        }
+
+        &__text{
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .futures-content{
+        @include container_max1000;
     }
 }

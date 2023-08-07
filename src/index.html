@@ -8,12 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <script src="./js/accordion.js" type="module"></script>
-    <script src="./js/swiper.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <title>MoGo</title>
 </head>
 <body>
-    <header class="container-header">
+    <header class="container-header" id="navbar">
         <div class="container-header__inner-content header-content">
             <img src="./assets/images/logo.svg" alt="main-logo" class="header-content-logos">
             <nav class="header-content__nav header-nav">
@@ -28,41 +27,55 @@
             </nav>
         </div>
     </header>
-    <div class="main-page-container">
-        <div class="main-page-container__inner-content main-page-content">
-            <h2 class="main-page-content__h2">creative template</h2>
-            <h1 class="main-page-content__h1">welcome <br>to mogo</h1>
-            <hr class="main-page-content__separator">
-            <button class="main-page-content__button">learn more</button>
-            <div class="main-page-content__slider main-page-slider">
-                <input type="radio" name="action" id="intro" class="main-slider-item__checked" checked/>
-                <input type="radio" name="action" id="work" class="main-slider-item__checked"/>
-                <input type="radio" name="action" id="about" class="main-slider-item__checked"/>
-                <input type="radio" name="action" id="contacts" class="main-slider-item__checked"/>
-                <label for="intro" class="main-page-slider__item main-slider-item">
-                    <div class="main-slider-item__full1 slider-hr-full">
-                        <hr class="main-slider-item__part1 slider-hr-part">
-                    </div>
-                    <p class="main-slider-item__text slider-text1"><span class="main-slider-item__number-part slider-number-part1">01</span> intro</p>
-                </label>
-                <label for="work" class="main-page-slider__item main-slider-item">
-                    <div class="main-slider-item__full2 slider-hr-full">
-                        <hr class="main-slider-item__part2 slider-hr-part">
-                    </div>
-                    <p class="main-slider-item__text slider-text2"><span class="main-slider-item__number-part slider-number-part2">02</span> work</p>
-                </label>
-                <label for="about" class="main-page-slider__item main-slider-item">
-                    <div class="main-slider-item__full3 slider-hr-full">
-                        <hr class="main-slider-item__part3 slider-hr-part">
-                    </div>
-                    <p class="main-slider-item__text slider-text3"><span class="main-slider-item__number-part slider-number-part3">03</span> about</p>
-                </label>
-                <label for="contacts" class="main-page-slider__item main-slider-item">
-                    <div class="main-slider-item__full4 slider-hr-full">
-                        <hr class="main-slider-item__part4 slider-hr-part">
-                    </div>
-                    <p class="main-slider-item__text slider-text4"><span class="main-slider-item__number-part slider-number-part4">04</span> contacts</p>
-                </label>
+    <div class="main-page-swiper swiper">
+        <div class="main-page-swiper-wrapper swiper-wrapper">
+            <div class="main-page-swiper-wrapper__slide swiper-slide">
+                <div class="main-page-container__inner-content main-page-content">
+                    <h2 class="main-page-content__h2">creative template</h2>
+                    <h1 class="main-page-content__h1">welcome <br>to mogo</h1>
+                    <hr class="main-page-content__separator">
+                    <button class="main-page-content__button">learn more</button>
+                </div>
+            </div>
+            <div class="main-page-swiper-wrapper swiper-slide">
+                <div class="main-page-container__inner-content main-page-content">
+                    <h2 class="main-page-content__h2">creative template</h2>
+                    <h1 class="main-page-content__h1">welcome <br>to mogo</h1>
+                    <hr class="main-page-content__separator">
+                    <button class="main-page-content__button">learn more</button>
+                </div>
+            </div>
+            <div class="main-page-swiper-wrapper swiper-slide">
+                <div class="main-page-container__inner-content main-page-content">
+                    <h2 class="main-page-content__h2">creative template</h2>
+                    <h1 class="main-page-content__h1">welcome <br>to mogo</h1>
+                    <hr class="main-page-content__separator">
+                    <button class="main-page-content__button">learn more</button>
+                </div>
+            </div>
+            <div class="main-page-swiper-wrapper swiper-slide">
+                <div class="main-page-container__inner-content main-page-content">
+                    <h2 class="main-page-content__h2">creative template</h2>
+                    <h1 class="main-page-content__h1">welcome <br>to mogo</h1>
+                    <hr class="main-page-content__separator">
+                    <button class="main-page-content__button">learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="pagination-wrapper">
+            <div class="pagination-content">
+                <div class="pagination-content__item pag-cont-item">
+                    <p class="pag-cont-item__text active-pag">01 <span>intro</span></p>
+                </div>
+                <div class="pagination-content__item pag-cont-item">
+                    <p class="pag-cont-item__text">02 <span>work</span></p>
+                </div>
+                <div class="pagination-content__item pag-cont-item">
+                    <p class="pag-cont-item__text">03 <span>about</span></p>
+                </div>
+                <div class="pagination-content__item pag-cont-item">
+                    <p class="pag-cont-item__text">04 <span>contacts</span></p>
                 </div>
             </div>
         </div>
@@ -121,33 +134,33 @@
             <h2 class="services-content__h2">We work with</h2>
             <h1 class="services-content__h1">amazing services</h1>
             <hr class="services-content__separator">
-            <div class="services-content__blocks servicese-blocks">
-                <div class="servicese-blocks__item services-item">
+            <div class="services-content__blocks services-blocks">
+                <div class="services-blocks__item services-item">
                     <img class="services-item__icon" src="./assets/images/services-icon1.svg" alt="amazing-services-icon1">
                     <h4 class="services-item__h4">photography</h4>
                     <p class="services-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="servicese-blocks__item services-item">
+                <div class="services-blocks__item services-item">
                     <img class="services-item__icon" src="./assets/images/services-icon2.svg" alt="amazing-services-icon2">
                     <h4 class="services-item__h4">web design</h4>
                     <p class="services-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="servicese-blocks__item services-item">
+                <div class="services-blocks__item services-item">
                     <img class="services-item__icon" src="./assets/images/services-icon3.svg" alt="amazing-services-icon3">
                     <h4 class="services-item__h4">creativity</h4>
                     <p class="services-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="servicese-blocks__item services-item">
+                <div class="services-blocks__item services-item">
                     <img class="services-item__icon" src="./assets/images/services-icon4.svg" alt="amazing-services-icon4">
                     <h4 class="services-item__h4">seo</h4>
                     <p class="services-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="servicese-blocks__item services-item">
+                <div class="services-blocks__item services-item">
                     <img class="services-item__icon" src="./assets/images/services-icon5.svg" alt="amazing-services-icon5">
                     <h4 class="services-item__h4">css/html</h4>
                     <p class="services-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="servicese-blocks__item services-item">
+                <div class="services-blocks__item services-item">
                     <img class="services-item__icon" src="./assets/images/services-icon6.svg" alt="amazing-services-icon6">
                     <h4 class="services-item__h4">digital</h4>
                     <p class="services-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -160,47 +173,83 @@
             <h2 class="for-devices-content__h2">For all devices</h2>
             <h1 class="for-devices-content__h1">unique design</h1>
             <hr class="for-devices-content__separator">
+            <img class="for-devices-content__ph-mocup" src="./assets/images/phone-mocup.png" alt="phone-look-mocup">
             <div class="for-devices-content__mocups mocups-content">
                 <img class="mocups-content__mocup" src="./assets/images/mocup.png" alt="tablet-look-mocup">
                 <img class="mocups-content__site-sheet" src="./assets/images/site-sheet.png" alt="tablet-look-mocup">
-                <img class="mocups-content__ph-mocup" src="./assets/images/phone-mocup.png" alt="phone-look-mocup">
             </div>
         </div>
     </div>
     <div class="service-acc-container" id="service-link">
-        <div class="service-acc-container__inner-content service-acc-content">
+        <div class="service-acc-container__inner-content service-acc-content" id="#accordionExample">
             <h2 class="service-acc-content__h2">Service</h2>
             <h1 class="service-acc-content__h1">what we do</h1>
             <hr class="service-acc-content__separator">
             <p class="service-acc-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consectetur eius dolorem ipsum voluptates quaerat molestiae officia nulla repellat doloribus, labore, dolorum assumenda maxime. Vitae dicta sit, provident quidem voluptates officiis possimus.</p>
             <div class="service-acc-content__inf-block service-acc-inf-block">
                 <img class="service-acc-inf-block__img" src="./assets/images/service-acc-inf-block.png" alt="service-block-image">
-                <div class="service-acc-inf-block__accordion accordion">
-                    <div class="accordion__item acc-group">
-                        <button class="acc-group__button acc-button">
-                            <img class="acc-button__icon" src="./assets/images/accordion-icon1.svg" alt="accordion-icon">
-                            <p class="acc-button__title">photography</p>
-                        </button>
-                        <div class="acc-group__text-block acc-text-block">
-                            <p class="acc-text-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio? Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!</p>
+                <div class="service-acc-inf-block__accordion accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion__item acc-group  accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="acc-group__button acc-button accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <img class="acc-button__icon" src="./assets/images/accordion-icon1.svg" alt="accordion-icon">
+                                <p class="acc-button__title">photography</p>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="acc-group__text-block acc-text-block accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="acc-text-block__text accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. 
+                                Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio?
+                                Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. 
+                                Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. 
+                                Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? 
+                                Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. 
+                                Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. 
+                                Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion__item acc-group">
-                        <button class="acc-group__button acc-button">
-                            <img class="acc-button__icon" src="./assets/images/accordion-icon2.svg" alt="accordion-icon">
-                            <p class="acc-button__title">creativity</p>
-                        </button>
-                        <div class="acc-group__text-block acc-text-block">
-                            <p class="acc-text-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio? Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!</p>
+                    <div class="accordion__item acc-group  accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="acc-group__button acc-button accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <img class="acc-button__icon" src="./assets/images/accordion-icon2.svg" alt="accordion-icon">
+                                <p class="acc-button__title">creativity</p>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="acc-group__text-block acc-text-block accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="acc-text-block__text accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. 
+                                Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio?
+                                Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. 
+                                Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. 
+                                Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? 
+                                Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. 
+                                Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. 
+                                Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion__item acc-group">
-                        <button class="acc-group__button acc-button">
-                            <img class="acc-button__icon" src="./assets/images/accordion-icon3.svg" alt="accordion-icon">
-                            <p class="acc-button__title">web design</p>
-                        </button>
-                        <div class="acc-group__text-block acc-text-block">
-                            <p class="acc-text-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio? Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!</p>
+                    <div class="accordion__item acc-group  accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="acc-group__button acc-button accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <img class="acc-button__icon" src="./assets/images/accordion-icon3.svg" alt="accordion-icon">
+                                <p class="acc-button__title">web design</p>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="acc-group__text-block acc-text-block accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="acc-text-block__text accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus obcaecati repudiandae nesciunt minus perspiciatis! A, eligendi at sequi error nulla mollitia quam ut illo, sunt quae, itaque doloribus dolore explicabo. 
+                                Soluta unde asperiores est nesciunt nisi a sapiente tenetur impedit, ipsam tempore, minus libero perspiciatis dicta odit ducimus consequatur sed fugiat sequi numquam maxime odio?
+                                Itaque tenetur amet autem eaque blanditiis laborum delectus inventore repudiandae unde dolore, consequuntur quam asperiores recusandae, iusto eum non debitis saepe nam quisquam hic veritatis ut. 
+                                Doloremque quo accusamus praesentium impedit deleniti! Numquam dicta explicabo magnam. Obcaecati optio tempora, corporis cumque error expedita alias aperiam eum velit reiciendis non debitis enim iste sequi nihil natus suscipit blanditiis. 
+                                Voluptas ex doloribus corrupti obcaecati totam? Dolorum perspiciatis unde atque sunt quasi vero exercitationem a quae rerum veniam sed ipsa repudiandae reprehenderit, aut voluptatum dolore hic at natus quis voluptatibus repellat autem nisi, quia omnis? 
+                                Dolorum autem ratione ducimus obcaecati officiis! Nesciunt, soluta quasi veniam facere voluptatibus doloribus modi aperiam sint sunt consequuntur, nulla, fuga velit delectus eaque cupiditate iusto quae molestiae. 
+                                Doloremque numquam vel molestiae accusamus quae beatae itaque molestias quas cumque. 
+                                Accusantium, consequuntur ullam animi error eaque minus, eveniet eos tenetur maiores excepturi corporis illum!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -209,7 +258,7 @@
     </div>
     <div class="swiper-container swiper">
         <div class="swiper__inner-content swiper-content swiper-wrapper">
-            <div class="swiper-content__slide swiper-slide">
+            <div class=" review-swiper-slide1 swiper-content__slide swiper-slide">
                 <div class="swiper-slide__content slide-content">
                     <div class="swiper-slide-content__img">
                         <img src="./assets/images/review-icon.svg" alt="review-icon">
@@ -221,7 +270,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="swiper-content__slide swiper-slide">
+            <div class=" review-swiper-slide1 swiper-content__slide swiper-slide">
                 <div class="swiper-slide__content slide-content">
                     <div class="swiper-slide-content__img">
                         <img src="./assets/images/review-icon.svg" alt="review-icon">
@@ -233,7 +282,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="swiper-content__slide swiper-slide">
+            <div class=" review-swiper-slide1 swiper-content__slide swiper-slide">
                 <div class="swiper-slide__content slide-content">
                     <div class="swiper-slide-content__img">
                         <img src="./assets/images/review-icon.svg" alt="review-icon">
@@ -245,7 +294,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="swiper-content__slide swiper-slide">
+            <div class=" review-swiper-slide1 swiper-content__slide swiper-slide">
                 <div class="swiper-slide__content slide-content">
                     <div class="swiper-slide-content__img">
                         <img src="./assets/images/review-icon.svg" alt="review-icon">
@@ -257,7 +306,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="swiper-content__slide swiper-slide">
+            <div class=" review-swiper-slide1 swiper-content__slide swiper-slide">
                 <div class="swiper-slide__content slide-content">
                     <div class="swiper-slide-content__img">
                         <img src="./assets/images/review-icon.svg" alt="review-icon">
@@ -330,12 +379,25 @@
     </div>
     <div class="partners-container">
         <div class="partners-container__inner-content partners-content">
-            <img class="partners-content__item" src="./assets/images/partners-icon1.svg" alt="partners-icon">
-            <img class="partners-content__item" src="./assets/images/partners-icon2.svg" alt="partners-icon">
-            <img class="partners-content__item" src="./assets/images/partners-icon3.svg" alt="partners-icon">
-            <img class="partners-content__item" src="./assets/images/partners-icon4.svg" alt="partners-icon">
-            <img class="partners-content__item" src="./assets/images/partners-icon5.svg" alt="partners-icon">
-            <img class="partners-content__item" src="./assets/images/partners-icon6.svg" alt="partners-icon">
+            <div class="partners-content__item">
+                <img src="./assets/images/partners-icon1.svg" alt="partners-icon">
+            </div>
+            <div class="partners-content__item">
+                <img src="./assets/images/partners-icon2.svg" alt="partners-icon">
+            </div>
+            <div class="partners-content__item">
+                <img src="./assets/images/partners-icon3.svg" alt="partners-icon">
+            </div>
+            <div class="partners-content__item">
+                <img src="./assets/images/partners-icon4.svg" alt="partners-icon">
+            </div>
+            <div class="partners-content__item">
+                <img src="./assets/images/partners-icon5.svg" alt="partners-icon">
+            </div>
+            <div class="partners-content__item">
+                <img src="./assets/images/partners-icon6.svg" alt="partners-icon">
+            </div>
+            
         </div>
     </div>
     <div class="work-container" id="work-link">
@@ -586,7 +648,7 @@
             <hr class="map-content__separator">
         </div>
     </div>
-    <footer class="footer-container">
+    <footer class="footer-container" id="contact-link">
         <div class="footer-container__inner-content footer-content">
             <div class="footer-content__contact-block footer-contact-block">
                 <img class="footer-contact-block__logo"  src="./assets/images/footer-logo.svg" alt="footer-logo">
@@ -595,14 +657,14 @@
                 <div class="footer-contact-block__smedia footer-smedia">
                     <p class="footer-smedia__text">follow us</p>
                     <div class="footer-smedia__icons footer-smedia-icons">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-facebook-icon.svg" alt="footer-facebook-link">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-twitter-icon.svg" alt="footer-twitter-link">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-insta-icon.svg" alt="footer-instagram-link">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-pinterest-icon.svg" alt="footer-pinterest-link">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-linkedin-icon.svg" alt="footer-linkedin-link">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-youtube-icon.svg" alt="footer-youtube-link">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-dribble-icon.svg" alt="footer-dribble-link">
-                        <a class="footer-smedia-icons" href="#"></a><img src="./assets/images/footer-tiktok-icon.svg" alt="footer-tiktok-link">
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-facebook-icon.svg" alt="footer-facebook-link"></a>
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-twitter-icon.svg" alt="footer-twitter-link"></a>
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-insta-icon.svg" alt="footer-instagram-link"></a>
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-pinterest-icon.svg" alt="footer-pinterest-link"></a>
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-linkedin-icon.svg" alt="footer-linkedin-link"></a>
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-youtube-icon.svg" alt="footer-youtube-link"></a>
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-dribble-icon.svg" alt="footer-dribble-link"></a>
+                        <a class="footer-smedia-icons__item" href="#"><img src="./assets/images/footer-tiktok-icon.svg" alt="footer-tiktok-link"></a>
                     </div>
                 </div>
                 <form class="footer-contact-block__form footer-form">
@@ -615,17 +677,17 @@
                 <div class="footer-blogs-block__posts footer-posts">
                     <a class="footer-posts__link" href="#"><div class="footer-posts__item footer-post">
                         <img src="./assets/images/footer-blog1.png" alt="post1-image">
-                        <h6 class="footer-post__h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, dolores</h6>
+                        <h6 class="footer-post__h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
                         <p class="footer-post__date">jan.9.22.15</p>
                     </div></a>
                     <a class="footer-posts__link" href="#"><div class="footer-posts__item footer-post">
                         <img src="./assets/images/footer-blog2.png" alt="post2-image">
-                        <h6 class="footer-post__h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, dolores</h6>
+                        <h6 class="footer-post__h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
                         <p class="footer-post__date">jan.9.22.15</p>
                     </div></a>
                     <a class="footer-posts__link" href="#"><div class="footer-posts__item footer-post">
                         <img src="./assets/images/footer-blog3.png" alt="post3-image">
-                        <h6 class="footer-post__h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, dolores</h6>
+                        <h6 class="footer-post__h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
                         <p class="footer-post__date">jan.9.22.15</p>
                     </div></a>
                 </div>
@@ -648,5 +710,10 @@
         </div>
         <p class="footer-container__copyright">copyright &#169; 2021 mogo. all rights reserved</p>
     </footer>
+
+
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/swiper.js" type="module"></script>
+    <script src="./js/header.js" type="module"></script>
 </body>
 </html>

@@ -35,7 +35,6 @@
     &__link{
         text-decoration: none;
         color: white;
-        margin-bottom: -5px;
     }
 }
 
@@ -128,4 +127,52 @@
 .work-block5{
     grid-column: 3/4;
     grid-row: 1/3;
+}
+
+@media (max-width: 1200px){
+    .work-content{
+        @include container_max1200;
+        padding-top: 58px;
+        display: grid;
+    
+        &__h2,
+        &__h1{
+            font-size: 24px;
+            height: 54px;
+        }
+    
+        &__separator{
+            width: 148px;
+            margin-top: 15px;
+        }
+    
+        &__text{
+            width: 85%;
+            min-height: 80px;
+            justify-self: center;
+            font-size: 14px;
+
+        }
+    }
+
+    .work-images{
+        padding: 28px 0 58px;
+    }
+
+    .work-item{
+        &__icon{
+            width: 28px;
+            top: 37%;
+        }
+
+        &__h6{
+            font-size: 18px;
+            top: 66%;
+        }
+
+        &__text{
+            font-size: 14px;
+            top: 77%;
+        }
+    }
 }

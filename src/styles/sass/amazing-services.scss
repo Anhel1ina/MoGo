@@ -16,7 +16,7 @@
     }
 }
 
-.servicese-blocks{
+.services-blocks{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
@@ -25,12 +25,17 @@
 
     &__item{
         display: grid;
-        grid-template-columns: 70px auto;
+        grid-template-columns: repeat(2, auto);
     }
 }
 
 .services-item{
     height: 139px;
+
+    &__icon{
+        width: 70px;
+        aspect-ratio: 1/1;
+    }
 
     &__h4{
         height: 51px;
@@ -54,5 +59,69 @@
         color: rgba(45, 48, 51, 1);
         font-size: 18px;
         font-weight: 400;
+    }
+}
+
+@media(max-width:1200px) {
+    .services-content{
+        @include container_max1200;
+        padding: 29px 0 58px;
+
+        &__h2,
+        &__h1{
+            font-size: 24px;
+            height: 67px;
+        }
+    
+        &__separator{
+            width: 148px;
+        }
+    
+        &__text{
+            font-size: 14px;
+        }
+    }
+
+    .services-blocks{
+        column-gap: 25px;
+        row-gap: 58px;
+        margin-top: 67px;
+
+    }
+    
+    .services-item{
+        height: 117px;
+
+        &__icon{
+            width: 59px;
+        }
+
+        &__h4{
+            height: 43px;
+            margin: 7px 0 0 25px;
+
+            font-size: 18px;
+        }
+    
+        &__text{
+            height: 67px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .services-content{
+        @include container_max1000;
+    }
+
+    .services-blocks{
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+
+        &__item > p{
+            height: 40px;
+        }
     }
 }

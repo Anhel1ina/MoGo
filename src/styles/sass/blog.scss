@@ -19,7 +19,7 @@
         margin-top: 42px;
 
         display: flex;
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
     }
 }
@@ -107,11 +107,80 @@
         &:not(:last-child){
             margin-right: 43px;
         }
+
+        & > p{
+            align-self: center;
+        }
     }
 }
 
 .pair-icon__img{
     margin-right: 16px;
+}
+
+@media (max-width:1200px){
+    .blog-content{
+        @include container_max1200;
+        padding: 58px 0;
+
+        &__h2,
+        &__h1{
+            font-size: 24px;
+            height: 67px;
+        }
+    
+        &__separator{
+            width: 148px;
+            margin-top: 20px;
+        }
+    
+        &__text{
+            font-size: 14px;
+        }
+    }
+    
+    .blog-posts{
+        margin-top: 36px;
+        column-gap: 20px;
+    }
+
+    .post-date{
+        width: 68px;
+        left: -7px;
+        bottom: 21px;
+
+        &__num{
+            font-size: 24px;
+        }
+    
+        &__mo{
+            font-size: 14px;
+        }
+    }
+
+    .post-text{
+        margin-top: 26px;
+
+        &__title{
+            font-size: 18px;
+        }
+    
+        &__plot{
+            font-size: 14px;
+        }
+    }
+
+    .pair-icon{
+        &__img{
+            width: 27px;
+            margin-right: 13px;
+        }
+
+        &__num{
+            font-size: 12px;
+        }
+    }
+    
 }
 
 .map-container{
@@ -135,5 +204,25 @@
 
     &__separator{
         @include h-separator;
+    }
+}
+
+@media (max-width:1200px){
+    .map-content{
+        padding: 28px 0;
+
+        &__icon{
+            width: 28px;
+        }
+
+        &__h1{
+            font-size: 24px;
+            height: 55px;
+        }
+
+        &__separator{
+            margin-top: 16px;
+            width: 148px;
+        }
     }
 }
