@@ -224,3 +224,38 @@
         @include container_max1000;
     }
 }
+
+@media(max-width:710px){
+    .main-page-content,
+    .swiper-pagination{
+        @include container_max710;
+    }
+
+    .main-page-content{
+        &__h2{
+            font-size: 36px;
+        }
+
+        &__h1{
+            font-size: 80px;
+        }
+
+        &__button{
+            width: 100%;
+        }
+    }
+
+    .swiper-pagination{
+        &-bullet{
+            &::before{
+                grid-column: 1/5;
+            }
+        }
+    }
+
+    .pagination-wrapper{
+        visibility: hidden;
+        height: 42px;
+    }
+
+}

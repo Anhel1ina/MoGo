@@ -176,3 +176,20 @@
         }
     }
 }
+
+@media (max-width: 1000px){
+    .work-content{
+        @include container_max1000;
+
+        &__text{
+            margin-top: 15px;
+        }
+    }
+
+    .work-item{
+        &__h6{
+            font-size: 18px;
+            top: 60%;
+        }
+    }
+}

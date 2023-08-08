@@ -60,3 +60,25 @@
         @include container_max1000;
     }
 }
+
+@media(max-width: 710px){
+    .futures-content{
+        @include container_max710;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+
+        & .futures-block{
+            border: 0;
+            width: 100%;
+        }
+
+        & .futures-block:not(:last-child){
+            border-bottom: 1px solid white;
+        }
+
+        & .futures-block:last-child{
+            grid-column: 1/3;
+        }
+    }
+}

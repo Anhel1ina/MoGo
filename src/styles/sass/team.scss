@@ -51,6 +51,10 @@
 
         opacity: 0;
         transition: all .5s ease-in-out;
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     &:hover .team-block-images__icons{
@@ -153,5 +157,16 @@
         &__occup{
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width: 1000px){
+    .team-content{
+        @include container_max1000;
+        padding: 38px 0;
+    }
+
+    .team-img-block{
+        margin-top: 30px;
     }
 }

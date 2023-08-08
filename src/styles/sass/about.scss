@@ -166,3 +166,41 @@
         }
     }
 }
+
+@media(max-width: 710px){
+    .about-content{
+        @include container_max710;
+
+        &__img-block{
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: 100%;
+            height: 100%;
+            row-gap: 16px;
+        }
+    }
+
+    .about-block-item{
+        &:hover > .about-block-item__img{
+            opacity: 1;
+        }
+
+        &__icon{
+            top: 82%;
+            left: 15%;
+        }
+
+        &__text{
+            font-size: 18px;
+            text-align: left;
+            width: 70%;
+            bottom: 12%;
+            left: 30%;
+        }
+
+        &:hover::after{
+            height: 33%;
+            top: 67%;
+            left: 0;
+        }
+    }
+}

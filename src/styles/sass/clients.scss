@@ -134,3 +134,10 @@
         }
     }
 }
+
+@media (max-width: 1000px){
+    .clients-content{
+        @include container_max1000;
+        padding: 28px 0;
+    }
+}

@@ -1,7 +1,7 @@
 var prevScrollpos = window.scrollY;
         window.onscroll = function () {
             let currentScrollPos = window.scrollY;
-            if(window.innerWidth > 700){
+            if(window.innerWidth > 870){
                 if (prevScrollpos > currentScrollPos) {
                     document.getElementById("navbar").style.position = "fixed";
                     document.getElementById("navbar").style.top = "0";

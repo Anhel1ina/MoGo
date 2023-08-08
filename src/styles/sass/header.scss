@@ -4,8 +4,12 @@
 
     position: absolute;
     top: 0;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     z-index: 10;
+}
+
+.burger-menu-check{
+    display: none;
 }
 
 .header-content{
@@ -20,6 +24,29 @@
         display: flex;
         align-items: center;
     }
+
+    &__burger-menu{
+        display: none;
+        cursor: pointer;
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__burger-menu-check{
+        display: none;
+    }
+}
+
+.burger-menu__line{
+    width: 37px;
+    background-color: white;
+    opacity: 1;
+    height: 3px;
+    border: none;
+    margin: 5px;
 }
 
 .header-item-text{
@@ -86,5 +113,72 @@
 
     .header-item-text{
         width: 80px;
+    }
+}
+
+@media(max-width:870px){
+    .container-header{
+        transition: background .3s ease-in-out;
+    }
+
+    .header-content{
+        &__burger-menu{
+            display: flex; 
+        }
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    #burger-menu:checked ~ .container-header .burger-menu .line2{
+        display: none;
+    }
+    
+    #burger-menu:checked ~ .container-header .burger-menu .line1{
+        transform: rotate(45deg);
+        margin-bottom: 8px;
+    }
+    
+    #burger-menu:checked ~ .container-header .burger-menu .line3{
+        transform: rotate(-45deg);
+        margin-top: -10px;
+    }
+    
+    #burger-menu:checked ~ .container-header{
+        height: 100vh;
+        z-index: 10;
+        background: $mogoGradient,
+        url(../../assets/images/banner.png) center / cover no-repeat;
+        position: fixed;
+    }
+    
+    #burger-menu:checked ~ .container-header .header-content{
+        display: grid;
+        grid-template-rows: 68px 330px;
+        grid-template-columns: 184px auto;
+        height: 100vh;
+    }
+    
+    #burger-menu:checked ~ .container-header .header-content .header-content__nav{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/3;
+        grid-row: 2/3;
+
+        & .header-item-text{
+            width: 100%;
+            height: 63px;
+        }
+
+        & .header-item-img{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:710px){
+    .header-content{
+        @include container_max710;
     }
 }

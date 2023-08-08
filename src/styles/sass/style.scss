@@ -36,6 +36,12 @@ $footerColor: rgba(198, 203, 205, 1);
     margin: 0 auto;
 }
 
+@mixin container_max710{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 @mixin h2Pattern{
     width: 100%;
     height: 80px;

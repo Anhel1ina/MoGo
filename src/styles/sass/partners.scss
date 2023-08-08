@@ -31,3 +31,15 @@
     }
 }
 
+@media(max-width: 1000px){
+    .partners-content{
+        @include container_max1000;
+
+        &__item{
+            & > img{
+                width: 50%;
+            }
+        }
+    }
+}
+
