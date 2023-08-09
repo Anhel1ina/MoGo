@@ -26,6 +26,10 @@
 }
 
 .footer-contact-block{
+    &__logo{
+        padding: 31px 0;
+    }
+
     &__text{
         font-weight: 400;
         color: $footerColor;
@@ -203,7 +207,8 @@
 
     .footer-contact-block{
         &__logo{
-            height: 68px;
+            width: 95px;
+            padding: 20px 0;
         }
 
         &__text{
@@ -309,6 +314,49 @@
 
         &__smedia{
             margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 710px){
+    .footer-container{
+        &__inner-content{
+            @include container_max710;
+            grid-template-rows: repeat(3, auto);
+            grid-template-columns: 1fr;
+            padding-bottom: 0;
+        }
+    }
+
+    .footer-contact-block{
+        grid-row: 1/2;
+        text-align: center;
+
+        &__smedia{
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-blogs-block{
+        grid-row: 2/3;
+    
+        &__h5{
+            justify-content: center;
+        }
+    }
+
+    .footer-smedia-block{
+        grid-row: 3/4;
+        display: grid;
+        text-align: center;
+
+        &__h5,
+        &__photos{
+            justify-self: center;
+        }
+
+        &__link > p{
+            margin: 30px 0;
         }
     }
 }

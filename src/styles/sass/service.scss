@@ -124,6 +124,10 @@
     &::-webkit-scrollbar-thumb{
         background: rgba(149, 225, 211, 1);
     }
+
+    .swiper-pagination-reviews{
+        display: none;
+    }
 }
 
 @media(max-width: 1200px){
@@ -205,5 +209,36 @@
 
     .acc-text-block__text{
         padding: 10px 0;
+    }
+}
+
+@media(max-width: 710px){
+    .service-acc-content{
+        @include container_max710;
+        padding: 52px 0 31px;
+
+        &__inf-block{
+            grid-template-columns: 100%;
+            grid-template-rows: 200px auto;
+            row-gap: 29px;
+
+            & > img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .acc-button__title{
+        height: 78px;
+    }
+
+    .acc-group:not(:last-child) {
+        margin-bottom: 19px;
+    }
+
+    .swiper-pagination-reviews{
+        display: block;
+        position: absolute;
     }
 }

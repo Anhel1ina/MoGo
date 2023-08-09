@@ -37,9 +37,15 @@
 
         &__item{
             & > img{
-                width: 50%;
+                width: 98%;
             }
         }
+    }
+}
+
+@media(max-width: 1000px){
+    .partners-content{
+        @include container_max710;
     }
 }
 

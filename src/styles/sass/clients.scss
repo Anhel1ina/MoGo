@@ -141,3 +141,39 @@
         padding: 28px 0;
     }
 }
+
+@media (max-width: 710px){
+    .clients-container{
+        margin-top: 29px;
+    }
+
+    .clients-content{
+        @include container_max710;
+
+        &__block{
+            grid-template-columns: 100%;
+        }
+    }
+
+    .client-block-item{
+        grid-template-columns: 100%;
+        justify-items: center;
+
+        &__img{
+            padding-top: 0;
+            margin-bottom: 21px;
+        }
+
+        &__content{
+            text-align: center;
+
+            & .client-item-content__name{
+                justify-content: center;
+            }
+
+            & .client-item-content__separator{
+                margin: 21px auto;
+            }
+        }
+    }
+}

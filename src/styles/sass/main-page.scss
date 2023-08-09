@@ -81,7 +81,7 @@
     padding-bottom: 70px;
 }
 
-.swiper-pagination{
+.swiper-pagination-main-page{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
@@ -95,7 +95,7 @@
 
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-main-page .swiper-pagination-bullet{
     width: 100%;
     max-width: 270px;
     height: 4px;
@@ -199,7 +199,7 @@
         padding-bottom: 37px;
     }
 
-    .swiper-pagination{
+    .swiper-pagination-main-page{
         max-width: 990px;
     }
 
@@ -219,7 +219,7 @@
 
 @media(max-width:1000px){
     .main-page-content,
-    .swiper-pagination,
+    .swiper-pagination-main-page,
     .pagination-wrapper{
         @include container_max1000;
     }
@@ -227,7 +227,7 @@
 
 @media(max-width:710px){
     .main-page-content,
-    .swiper-pagination{
+    .swiper-pagination-main-page{
         @include container_max710;
     }
 
@@ -245,8 +245,8 @@
         }
     }
 
-    .swiper-pagination{
-        &-bullet{
+    .swiper-pagination-main-page{
+        & .swiper-pagination-bullet{
             &::before{
                 grid-column: 1/5;
             }

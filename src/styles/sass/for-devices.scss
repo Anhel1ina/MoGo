@@ -101,3 +101,28 @@
         @include container_max1000;
     }
 }
+
+@media(max-width: 710px){
+    .for-devices-content{
+        @include container_max710;
+
+        &__ph-mocup{
+            width: 18%;
+            right: 26%;
+        }
+    }
+
+    .mocups-content{
+        margin-top: 40px;
+        padding-bottom: 40px;
+        height: auto;
+
+        &__mocup{
+            width: 100%;
+        }
+
+        &__site-sheet{
+            width: 54%;
+        }
+    }
+}
