@@ -242,3 +242,12 @@
         position: absolute;
     }
 }
+
+@media(max-width: 460px){
+    .service-acc-content{
+        @include container_max460;
+        &__text{
+            margin-top: 15px;
+        }
+    }
+}

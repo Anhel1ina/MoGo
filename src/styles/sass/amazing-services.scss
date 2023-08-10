@@ -135,8 +135,26 @@
         margin-top: 40px;
         grid-template-columns: repeat(1, 1fr);
 
-            &__item > h4, p{
+        &__item {
+            height: 95px;
+            &  > h4, p{
                 margin-left: 0;
             }
         }
     }
+}
+
+@media(max-width:460px){
+    .services-content{
+        @include container_max460;
+    }
+
+    .services-blocks{
+        margin-top: 66px;
+
+        &__item {
+            column-gap: 20px;
+        }
+    }
+}
+

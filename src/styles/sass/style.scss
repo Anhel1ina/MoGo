@@ -37,7 +37,13 @@ $footerColor: rgba(198, 203, 205, 1);
 
 @mixin container_max710{
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+@mixin container_max460{
+    width: 100%;
+    max-width: 290px;
     margin: 0 auto;
 }
 

@@ -248,9 +248,11 @@
     }
 
     .footer-blogs-block{
+        display: grid;
         &__h5{
             height: 68px;
             font-size: 18px;
+            justify-self: center;
         }
     
         &__posts{
@@ -259,7 +261,7 @@
     }
 
     .footer-post{
-        grid-template-columns: 115px auto;
+        grid-template-columns: 29% auto;
         column-gap: 20px;
     
         & > img{
@@ -270,7 +272,7 @@
         }
     
         &__h6{
-            font-size: 14px;
+            font-size: 13px;
         }
     
         &__date{
@@ -279,9 +281,11 @@
     }
 
     .footer-smedia-block{
+        display: grid;
         &__h5{
             height: 68px;
             font-size: 18px;
+            justify-self: center;
         }
     
         &__photos > img{
@@ -290,6 +294,7 @@
     
         &__link{ 
             font-size: 12px;
+            text-align: center;
 
             & > p{
                 margin: 11px 0;
@@ -324,6 +329,7 @@
             @include container_max710;
             grid-template-rows: repeat(3, auto);
             grid-template-columns: 1fr;
+            column-gap: 0;
             padding-bottom: 0;
         }
     }
@@ -357,6 +363,15 @@
 
         &__link > p{
             margin: 30px 0;
+        }
+    }
+}
+
+@media (max-width: 460px){
+    .footer-container{
+        &__inner-content,
+        &__copyright{
+            @include container_max460;
         }
     }
 }

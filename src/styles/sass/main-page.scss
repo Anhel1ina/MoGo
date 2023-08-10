@@ -257,5 +257,29 @@
         visibility: hidden;
         height: 42px;
     }
+}
 
+@media(max-width:460px){
+    .main-page-content,
+    .swiper-pagination-main-page{
+        @include container_max460;
+    }
+
+    .main-page-content{
+        &__h2{
+            padding-top: 90px;
+        }
+
+        &__h1{
+            font-size: 48px;
+        }
+
+        &__separator{
+            margin-top: 0;
+        }
+    }
+
+    .main-page-swiper-wrapper{
+        padding-bottom: 27px;
+    }
 }

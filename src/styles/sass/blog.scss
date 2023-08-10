@@ -228,6 +228,13 @@
     }
 }
 
+@media (max-width:460px){
+    .blog-content{
+        @include container_max460;
+
+    }
+}
+
 .map-container{
     background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),
     url(../../assets/images/map-image.png) center / cover no-repeat;
@@ -272,3 +279,8 @@
     }
 }
 
+@media (max-width:460px){
+    .map-content{
+        padding: 42px 0;
+    }
+}

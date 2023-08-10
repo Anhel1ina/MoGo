@@ -182,3 +182,15 @@
         @include container_max710;
     }
 }
+
+@media(max-width:710px){
+    .header-content{
+        @include container_max710;
+    }
+}
+
+@media(max-width:460px){
+    .header-content{
+        @include container_max460;
+    }
+}

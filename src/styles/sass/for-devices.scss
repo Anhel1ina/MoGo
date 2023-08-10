@@ -44,7 +44,9 @@
     &__mocup{
         position: absolute;
         z-index: 2;
-        width: 100%;
+        width: 60%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     &__site-sheet{
@@ -75,7 +77,7 @@
         &__ph-mocup{
             height: auto;
             width: 13vw;
-            right: 24%;
+            right: 23%;
         }
     }
 
@@ -85,13 +87,13 @@
         height: auto;
 
         &__mocup{
-            width: 80%;
+            width: 49%;
             left: 50%;
             transform: translate(-50%);
         }
 
         &__site-sheet{
-            width: 45%;
+            width: 46%;
         }
     }
 }
@@ -118,11 +120,36 @@
         height: auto;
 
         &__mocup{
-            width: 100%;
+            width: 70%;
         }
 
         &__site-sheet{
-            width: 54%;
+            width: 64%;
+        }
+    }
+}
+
+@media(max-width: 460px){
+    .for-devices-content{
+        @include container_max460;
+
+        &__ph-mocup{
+            width: 30%;
+            right: 10%;
+        }
+    }
+
+    .mocups-content{
+        margin-top: 40px;
+        padding-bottom: 40px;
+        height: auto;
+
+        &__mocup{
+            width: 98%;
+        }
+
+        &__site-sheet{
+            width: 89%;
         }
     }
 }

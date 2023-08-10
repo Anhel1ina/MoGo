@@ -207,3 +207,27 @@
         }
     }
 }
+
+@media (max-width: 460px){
+    .team-content{
+        @include container_max460;
+
+        &__text{
+            margin-top: 15px;
+        }
+
+        &__img-block{
+            grid-template-rows: repeat(3, auto);
+        }
+    }
+
+    .team-block-images{
+        &__photo{
+            height: 236px;
+        }
+
+        &__icons{
+            top: 93%;
+        }
+    }
+}

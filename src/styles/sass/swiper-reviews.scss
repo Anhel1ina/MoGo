@@ -239,3 +239,12 @@
         }
     }
 }
+
+@media(max-width: 460px){
+    .swiper-slide{
+        &__content{
+            @include container_max460;
+            margin: 29px auto;
+        }
+    }
+}
