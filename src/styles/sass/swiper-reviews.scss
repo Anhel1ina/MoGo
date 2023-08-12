@@ -74,7 +74,9 @@
 
     .swiper-slide{
         &__content{
-            @include container_max1200;
+            width: 100%;
+            max-width: 800px;
+
             column-gap: 0;
             margin: 28px auto;
         }

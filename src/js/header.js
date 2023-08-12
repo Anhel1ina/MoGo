@@ -1,4 +1,4 @@
-var prevScrollpos = window.scrollY;
+let prevScrollpos = window.scrollY;
         window.onscroll = function () {
             let currentScrollPos = window.scrollY;
             if(window.innerWidth > 870){
@@ -26,3 +26,15 @@ var prevScrollpos = window.scrollY;
                 }
             }
         }
+
+const menuItems = document.querySelectorAll('.header-nav__item');
+const menuIcon = document.getElementById("burger-menu");
+
+if(menuIcon.checked = true){
+    menuItems.forEach((menuItem) => {
+        menuItem.addEventListener('click', () => {
+            menuIcon.checked = false;
+        });
+    });
+}
+
