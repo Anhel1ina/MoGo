@@ -64,7 +64,7 @@
 
     &__icon{
         position: absolute;
-        top: 31%;
+        top: 37%;
         left: 50%;
         z-index: 2;
         opacity: 0;
@@ -83,7 +83,7 @@
         z-index: 2;
         position: absolute;
         width: 100%;
-        top: 52%;
+        top: 64%;
         left: 50%;
         opacity: 0;
 
@@ -99,7 +99,7 @@
         width: 100%;
         z-index: 2;
         position: absolute;
-        top: 58%;
+        top: 74%;
         left: 50%;
         opacity: 0;
 
@@ -234,5 +234,14 @@
 @media (max-width: 460px){
     .work-content{
         @include container_max460;
+    }
+    .work-item{
+        &__h6{
+            font-size: 14px;
+        }
+
+        &__text{
+            font-size: 12px;
+        }
     }
 }

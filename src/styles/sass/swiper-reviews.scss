@@ -47,14 +47,26 @@
     }
 }
 
+
 .swiper{
     &__prev-button{
-        margin-left: 100px;
-        color: rgba(198, 203, 205, 1);
+        margin-left: 14%;
     }
 
     &__next-button{
-        margin-right: 100px;
+        margin-right: 14%;
+    }
+}
+
+@media (max-width:1520px){
+    .swiper{
+        &__prev-button{
+            margin-left: 7%;
+        }
+    
+        &__next-button{
+            margin-right: 7%;
+        }
     }
 }
 

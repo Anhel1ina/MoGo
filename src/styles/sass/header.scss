@@ -40,9 +40,6 @@
     }
 }
 
-.menu-active{
-    color: red;
-}
 
 .burger-menu__line{
     width: 37px;
@@ -73,7 +70,7 @@
     &::after{
         content: "";
         height: 2px;
-        width: 100%;
+        width: 80%;
         background-color: transparent;
     }
 
@@ -81,6 +78,7 @@
         color: $hoverColor;
 
         &::after{
+            animation: menu-line .3s linear;
             background-color: $hoverColor;
         }
     }

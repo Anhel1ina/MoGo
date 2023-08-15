@@ -94,6 +94,20 @@ $footerColor: rgba(198, 203, 205, 1);
     align-items: center;
 }
 
+@keyframes menu-line{
+    0%{
+        width: 0%;
+    }
+
+    50%{
+        width: 50%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
 @import './header.scss';
 @import './main-page.scss';
 @import './about.scss';

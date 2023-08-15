@@ -1,3 +1,6 @@
+window.addEventListener('load', function() {
+    document.getElementById('burger-menu').checked = false;
+});
 let prevScrollpos = window.scrollY;
         window.onscroll = function () {
             let currentScrollPos = window.scrollY;
